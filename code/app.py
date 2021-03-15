@@ -7,6 +7,7 @@ from resources.user import UserRegister, User, UserLogin, UserLogout, TokenRefre
 from resources.student_names import StudentNameRegister, StudentName
 from resources.academic_program import ProgramRegister, Program, ProgramList
 from resources.student_program import StudentProgRegister, StudentProgram, StudentInProgram
+from resources.transfer_courses import TransferCourseRegister, TransferCourse
 
 from db import db
 
@@ -88,6 +89,8 @@ api.add_resource(ProgramList, '/programs')
 api.add_resource(StudentProgRegister, '/student_prog_register')
 api.add_resource(StudentProgram, '/student_program/<string:student_username>')
 api.add_resource(StudentInProgram, '/student_in_program/<string:program_code>')
+api.add_resource(TransferCourseRegister, '/transfer_course_register')
+api.add_resource(TransferCourse, '/transfer_course/<string:student_username>')
 
 
 if __name__ == '__main__':
