@@ -1,3 +1,3 @@
 # The Kickoff-Project
 
-Sample project. Practicing.
+Sample project.
